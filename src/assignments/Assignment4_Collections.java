@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Assignment4_Collections {
+public class Assignment4_collections {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -175,8 +175,9 @@ public class Assignment4_Collections {
 		//--------------------------------------------------------------------------------------------
 		
 		System.out.println(Data.get("ProductTable").get(1).get("Product2").get("Supplier"));
-		
 
 	}
 
 }
+
+		
