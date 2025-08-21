@@ -21,6 +21,7 @@ public class Assignment9_Conditional_LoopStatement {
         for (int i = 0; i < names.length; i++) {
             double variablePayPercent = 0;
             double bonus = 0;
+            int reward =0;
 
             // Conditional logic based on rating
             if (ratings[i] >= 4.0) {
@@ -33,14 +34,16 @@ public class Assignment9_Conditional_LoopStatement {
                 variablePayPercent = 3.0;
                 bonus = 300;
             }
-
-            // Base hike
-            double hike = (baseSalaries[i] * (variablePayPercent / 100.0)) + bonus;
-
+            
             // Extra reward if experience >= 5 years
             if (experiences[i] >= 5.0) {
-                hike += 5000;
+                reward += 5000;
             }
+
+            // Base hike
+            double hike = (baseSalaries[i] * (variablePayPercent / 100.0)) + bonus+ reward;
+
+           
 
             // Convert to percentage
             double hikePercent = (hike / baseSalaries[i]) * 100.0;
