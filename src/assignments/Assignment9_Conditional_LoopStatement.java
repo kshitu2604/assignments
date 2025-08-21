@@ -52,7 +52,7 @@ public class Assignment9_Conditional_LoopStatement {
         // Step 4: Print results
         System.out.println("Employee Hike Percentages:");
         for (Map.Entry<String, Double> entry : hikePercentages.entrySet()) {
-            System.out.printf("%s -> %.2f%%\n", entry.getKey(), entry.getValue());
+        	System.out.println(entry.getKey() + " -> " + entry.getValue() + "%");
         }
     }
 	
